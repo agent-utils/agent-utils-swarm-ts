@@ -34,7 +34,7 @@
   "homepage": "https://agent-utils.ai",
   "repository": {
     "type": "git",
-    "url": "https://github.com/agent-utils/agent-utils-swarm-ts.git"
+    "url": "git+https://github.com/agent-utils/agent-utils-swarm-ts.git"
   },
   "engines": {
     "node": ">=18"
