@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 // Thin MCP-over-HTTP client for the hosted agent_utils Swarm server: memory, mutex,
 // task board, pub/sub, idempotency and webhook inbox, all on one endpoint.
-// This is a client, not the service — see https://agent-utils.ai.
+// This is a client, not the service - see https://agent-utils.ai.
 // Zero dependencies: uses the global `fetch` (Node 18+ or any modern runtime).
 
 export interface AgentUtilsOptions {
-  /** Bearer token. Any secret works — the first call auto-provisions a free trial. */
+  /** Bearer token. Any secret works - the first call auto-provisions a free trial. */
   token: string;
   /** Override the MCP endpoint (defaults to production; see `STAGING_ENDPOINT`). */
   endpoint?: string;
@@ -17,7 +17,7 @@ export const STAGING_ENDPOINT = "https://mcp-staging.agent-utils.ai/swarm";
 type Args = Record<string, unknown>;
 
 /** Client for the agent_utils Swarm MCP server. The same token works on both
- *  agent_utils servers (swarm and extensions) — see https://agent-utils.ai. */
+ *  agent_utils servers (swarm and extensions) - see https://agent-utils.ai. */
 export class AgentUtilsSwarm {
   private readonly token: string;
   private readonly endpoint: string;
@@ -67,7 +67,7 @@ export class AgentUtilsSwarm {
   }
 
   /**
-   * Update an existing entry. Errors if the key does not exist — use `putMemory`
+   * Update an existing entry. Errors if the key does not exist - use `putMemory`
    * to create. Tags are managed explicitly via `tagsToAdd` / `tagsToDelete`;
    * you are charged per tag operation whether or not the tag was present.
    */
@@ -304,5 +304,9 @@ export class AgentUtilsSwarm {
 
   submitExitFeedback(args: Args = {}) {
     return this.call("submit_exit_feedback", args);
+  }
+
+  deleteAccount(args: Args = {}) {
+    return this.call("delete_account", args);
   }
 }
