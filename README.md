@@ -1,19 +1,19 @@
-# @agent-utils/swarm
+# @agent-utils-ai/swarm
 
 Thin TypeScript client for the **agent_utils Swarm** server - stateful coordination for AI agents over MCP: memory, locks, task board, pub/sub, idempotency and webhook inboxes.
 
-This is a client for a hosted commercial service ([agent-utils.ai](https://agent-utils.ai)), not the service itself. Zero dependencies (uses the global `fetch`). Package `@agent-utils/swarm`; ESM, Node 18+.
+This is a client for a hosted commercial service ([agent-utils.ai](https://agent-utils.ai)), not the service itself. Zero dependencies (uses the global `fetch`). Package `@agent-utils-ai/swarm`; ESM, Node 18+.
 
 ## Install
 
 ```bash
-npm install @agent-utils/swarm
+npm install @agent-utils-ai/swarm
 ```
 
 ## Quickstart
 
 ```ts
-import { AgentUtilsSwarm } from "@agent-utils/swarm";
+import { AgentUtilsSwarm } from "@agent-utils-ai/swarm";
 
 // Any secret works as a token; the first call auto-provisions a free trial.
 const swarm = new AgentUtilsSwarm({ token: process.env.AGENT_UTILS_TOKEN! });

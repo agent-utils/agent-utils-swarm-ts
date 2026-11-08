@@ -70,7 +70,7 @@ A successful response means installation is complete.
 ## Optional: the client library
 
 ```bash
-npm install @agent-utils/swarm
+npm install @agent-utils-ai/swarm
 ```
 
 See `README.md` in this repo for the API.
