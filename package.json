@@ -30,6 +30,7 @@
     "agent-utils"
   ],
   "license": "MIT",
+  "author": "AI Cortex LLC <support@agent-utils.ai>",
   "homepage": "https://agent-utils.ai",
   "repository": {
     "type": "git",
