@@ -1,7 +1,7 @@
 {
   "name": "@agent-utils/swarm",
   "version": "0.1.0",
-  "description": "Thin client for the agent_utils Swarm MCP server — memory, locks, task board, pub/sub, idempotency and webhook inboxes for AI agents. One account spans both agent_utils servers.",
+  "description": "Thin client for the agent_utils Swarm MCP server - memory, locks, task board, pub/sub, idempotency and webhook inboxes for AI agents. One account spans both agent_utils servers.",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
